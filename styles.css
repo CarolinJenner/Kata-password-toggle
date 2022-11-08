@@ -1,0 +1,89 @@
+/******** general stylings *******/
+
+*,
+*:before,
+*:after  {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-blue-01: hsl(195, 59%, 59%);
+    --clr-blue-01-transp: hsla(195, 59%, 59%, 0.5);
+    --clr-green-01: hsl(90, 66%, 82%);
+    --clr-transp: hsla(0, 100%, 100%, 0);
+}
+
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: var(--clr-green-01);
+    height: 100%;
+}  
+
+/******** specific stylings *******/
+button {
+    border: none;
+    background-color: var(--clr-transp);
+}
+
+svg {
+    position: absolute;
+    top: -900%;
+    left: 50%;
+
+    transition: color .3s ease-in-out;
+}
+
+.max-width {
+    max-width: 400px;
+
+    position: relative;
+}
+
+.input-pw {
+    width: auto;
+    font-size: 1rem;
+    padding-block: .5rem;
+    padding-inline: .5rem;
+}
+
+#btnEyeShut:hover {
+    cursor: pointer;
+    color: var(--clr-blue-01-transp);
+}
+
+/******** utilities *******/
+
+/**sizes**/
+.s-2-5-rem {
+    height: 2.5rem;
+}
+
+/**colors & borders**/
+.bdr-01rem-bl {
+    border: solid .1rem var(--clr-blue-01);
+}
+
+.bdr-r-0-25 {
+    border-radius: .25rem;
+}
+
+.clr-blue-01 {
+    color: var(--clr-blue-01);
+}
+
+/**felx**/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: .5rem;
+}
+
+/**attributes**/
+.hidden {
+    display: none;
+}
