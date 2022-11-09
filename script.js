@@ -1,7 +1,7 @@
-let btn = document.querySelector("button");
-let btnEyeShut = document.querySelector("#btnEyeShut");
-let inputPw = document.querySelector("input");
-let pwState = document.querySelector("#pwState")
+const btn = document.querySelector("button");
+const btnEyeShut = document.querySelector("#btnEyeShut");
+const inputPw = document.querySelector("input");
+const pwState = document.querySelector("#pwState")
 
 function toggleVisibility(event) {
     btnEyeShut.classList.toggle("hidden");
@@ -11,8 +11,6 @@ function toggleVisibility(event) {
     }
     else {
         inputPw.setAttribute("type", "password");
-
-        //EDIT
         pwState.textContent = "click to show password";
     }
 }
